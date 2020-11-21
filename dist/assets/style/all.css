@@ -8907,4 +8907,7 @@ a:hover {
   font-size: 14px;
   line-height: 1.5; }
 
+* {
+  outline: 1px solid green; }
+
 /*# sourceMappingURL=all.css.map */
