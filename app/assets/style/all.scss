@@ -3,15 +3,17 @@
 @import "../../../node_modules/bootstrap/scss/mixins";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-@import 'base/font';//字型
+@import 'base/base';//字型
 
 @import 'components/sidebar';//側邊攔
 @import 'components/main';//上方選單
-@import 'components/assignment';//左側選單
+
+// 頁面
+@import 'page/assignment';
 
 
 
 
 *{
-    outline: 1px solid green;
+    // outline: 1px solid green;
 }

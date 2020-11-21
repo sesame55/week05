@@ -10,3 +10,9 @@ $fz: 10px;
     font-size: $fz * 1.6;
     line-height: 1.5;
 }
+
+a{
+    &:hover {
+        text-decoration: none;
+    }
+}

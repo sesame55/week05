@@ -64,14 +64,14 @@
             <div class="container-fluid">
 <!-- 上方選單 -->
 <div class="row">
-    <nav class="main-nav d-flex p-5 w-100  align-items-center">
+    <nav class="main-nav d-flex p-5 w-100 align-items-center">
         <h2 class="main-nav-title text-info mr-7">Assignment</h2>
         <ul class="main-navbar d-flex w-100">
             <li class="mr-auto fz-16 d-flex">
                 All Courses
                 <a href="#" class="main-navbar-item material-icons text-secondary ml-2"> keyboard_arrow_down </a>
             </li>
-            <li class='mr-4'>
+            <li class="mr-4">
                 <a href="#" class="main-navbar-item material-icons text-info"> search </a>
             </li>
             <li>
@@ -141,7 +141,72 @@
             </ul>
         </div>
     </div>
-    <div class="col-8">456</div>
+    <div class="col-8 d-flex flex-column p-0">
+        <!-- 標題 -->
+        <div class="assignment-content px-3 bg-primary">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="assignment-grop d-flex flex-column">
+                    <span>Chapter Assignment 2 / HTML&CSS</span>
+                    <p class="assignment-title">Please check this file for me, thanks!</p>
+                </div>
+                <a href="#" class="material-icons text-info"> more_vert </a>
+            </div>
+        </div>
+        <div class="border border-success">
+            <div class="assignment-detail p-3 d-flex">
+                <img class="assignment-detail-img mr-2" src="assets/images/emilywang.jpeg" alt="" />
+                <div class="assignment-detail-content border-bottom border-success">
+                    <h5 class="assignment-detail-name mb-1">Emily Wang</h5>
+                    <span class="assignment-detail-time text-dark">10:38 AM (4 hours ago)</span>
+                    <p class="assignment-detail-text mb-3 mt-3">
+                        Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the
+                        following code the height of the
+                        <span class="text-secondary bg-primary rounded px-1"> div</span> is bigger than the height of the
+                        <span class="text-secondary bg-primary px-1 rounded">img</span> ? There is a gap below the image, but it
+                        doesn’t seems to be a padding/margin. <br />What is the gap or extra space below image?
+                    </p>
+                    <button class="btn btn-primary border border-success d-flex px-3 py-2 mb-3">
+                        <span class="material-icons mr-2"> attach_file </span>HW-2-David.zip
+                    </button>
+                </div>
+            </div>
+            <div class="assignment-detail p-3 d-flex">
+                <img class="assignment-detail-img mr-2" src="assets/images/andychen.jpeg" alt="" />
+                <div class="assignment-detail-content">
+                    <div class="d-flex align-items-center mb-1">
+                        <h5 class="assignment-detail-name m-0 mr-auto">Andy Chen (You)</h5>
+                        <span class="material-icons mr-4"> star_border </span>
+                        <span class="material-icons"> edit </span>
+                    </div>
+                    <span class="assignment-detail-time mb-3 text-dark">13:24 AM (1 hours ago)</span>
+                    <p class="assignment-detail-text mb-3 mt-3">
+                        Hi David, by default, an image is rendered inline, like a letter so it sits on the same line
+                        that a, b, c and d sit on. There is space below that line for the descenders you find on letters
+                        like g, j, p and q.
+                        <br />
+                        <br />
+                        You can: 　
+                        <br />
+                        <br />
+                        • adjust the <span class="text-secondary bg-primary px-1 rounded">vertical-align</span> of the image to position it elsewhere (e.g. the middle ) or 　
+                        <br />
+                        • change the <span class="text-secondary bg-primary px-1 rounded">display</span> so it isn’t inline.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- 按鈕 -->
+        <div class="d-flex justify-content-between align-items-center mt-3">
+            <div class="d-flex">
+                <span class="material-icons mr-4"> navigate_before </span>
+                <span class="material-icons"> navigate_next </span>
+            </div>
+            <div>
+                <button class="btn btn-outline-secondary mr-3">Mark as read</button>
+                <button class="btn btn-secondary">Reply</button>
+            </div>
+        </div>
+    </div>
 </div>
 </div>
         </div>

@@ -8789,6 +8789,9 @@ body {
   font-size: 16px;
   line-height: 1.5; }
 
+a:hover {
+  text-decoration: none; }
+
 .sidebar {
   width: 296px;
   height: 100vh;
@@ -8854,14 +8857,15 @@ body {
 
 .assignment-list {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  border-radius: 2px 2px 0px 0px; }
 
 .assignment-list-item {
   display: block;
-  border: 1px solid #CDDDCD;
+  border: 1px solid #cdddcd;
   padding: 12px; }
-  .assignment-list-item.active {
-    background-color: #EDF4EE; }
+  .assignment-list-item.active, .assignment-list-item:hover {
+    background-color: #edf4ee; }
 
 .assignment-list-title {
   font-size: 14px;
@@ -8872,7 +8876,35 @@ body {
   line-height: 1.5;
   font-weight: bold; }
 
-* {
-  outline: 1px solid green; }
+.assignment-content {
+  padding: 12px 0;
+  border: 1px solid #cdddcd;
+  border-radius: 2px 2px 0px 0px; }
+
+.assignment-title {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
+  margin: 0; }
+
+.assignment-detail-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.assignment-detail-name {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold; }
+
+.assignment-detail-time {
+  font-size: 14px;
+  line-height: 1.5; }
+
+.assignment-detail-text {
+  font-size: 14px;
+  line-height: 1.5; }
 
 /*# sourceMappingURL=all.css.map */

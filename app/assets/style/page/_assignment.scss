@@ -1,0 +1,61 @@
+.assignment-list {
+    list-style: none;
+    padding: 0;
+    border-radius: 2px 2px 0px 0px;
+}
+.assignment-list-item {
+    display: block;
+    border: 1px solid #cdddcd;
+    padding: 12px;
+    &.active,
+    &:hover {
+        background-color: #edf4ee;
+    }
+}
+
+.assignment-list-title {
+    font-size: $fz * 1.4;
+    line-height: $fz * 2.4;
+}
+
+.assignment-list-detail {
+    font-size: $fz * 1.6;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+//
+
+.assignment-content {
+    padding: 12px 0;
+    border: 1px solid #cdddcd;
+    border-radius: 2px 2px 0px 0px;
+}
+.assignment-title {
+    font-size: $fz * 1.6;
+    line-height: 1.5;
+    font-weight: bold;
+    margin: 0;
+}
+
+.assignment-detail {
+    &-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    &-name {
+        font-size: $fz * 1.6;
+        line-height: 1.5;
+        font-weight: bold;
+    }
+    &-time {
+        font-size: $fz * 1.4;
+        line-height: 1.5;
+    }
+    &-text {
+        font-size: $fz * 1.4;
+        line-height: 1.5;
+    }
+}
