@@ -1,0 +1,24 @@
+.sidebar {
+    // position: fixed;
+    // top: 0;
+    // bottom: 0;
+    // left: 0;
+    width: 296px;
+    height: 100vh;
+}
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    .sidebar-menu-item {
+        text-decoration: none;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        font-weight: bold;
+        border-left: 4px solid transparent ;
+        transition: all 0.3s;
+        &:hover{
+            border-left: 4px solid #2A8356 ;
+        }
+    }
+}

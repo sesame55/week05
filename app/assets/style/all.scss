@@ -1,0 +1,16 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import 'helpers/variables';
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+@import 'base/font';//字型
+
+@import 'components/sidebar';//側邊攔
+// @import 'components/main';//
+
+
+
+
+*{
+    outline: 1px solid green;
+}
