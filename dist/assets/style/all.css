@@ -8785,6 +8785,10 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: 'Lato', sans-serif; }
 
+.fz-16 {
+  font-size: 16px;
+  line-height: 1.5; }
+
 .sidebar {
   width: 296px;
   height: 100vh;
@@ -8803,8 +8807,10 @@ body {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
-    .sidebar-menu .sidebar-menu-item:hover {
+    .sidebar-menu .sidebar-menu-item.active {
       border-left: 4px solid #2a8356; }
+    .sidebar-menu .sidebar-menu-item:hover {
+      background-color: #CDDDCD; }
 
 .sidebar-user {
   position: absolute;
@@ -8831,6 +8837,40 @@ body {
 .sidebar-detail .sidebar-text {
   font-size: 14px;
   line-height: 1.5; }
+
+.main-nav-title {
+  font-size: 24px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0; }
+
+.main-navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .main-navbar-item {
+    display: block;
+    text-decoration: none; }
+
+.assignment-list {
+  list-style: none;
+  padding: 0; }
+
+.assignment-list-item {
+  display: block;
+  border: 1px solid #CDDDCD;
+  padding: 12px; }
+  .assignment-list-item.active {
+    background-color: #EDF4EE; }
+
+.assignment-list-title {
+  font-size: 14px;
+  line-height: 24px; }
+
+.assignment-list-detail {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold; }
 
 * {
   outline: 1px solid green; }

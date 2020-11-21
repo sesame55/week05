@@ -1,0 +1,17 @@
+.main-nav{
+    &-title{
+        font-size: $fz * 2.4;
+        line-height: 1.5;
+        padding: 0;
+        margin: 0;
+    }
+}
+.main-navbar{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    &-item{
+        display: block;
+        text-decoration: none;
+    }
+}

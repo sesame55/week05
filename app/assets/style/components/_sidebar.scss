@@ -21,8 +21,11 @@
         font-weight: bold;
         border-left: 4px solid transparent;
         transition: all 0.3s;
-        &:hover {
+        &.active {
             border-left: 4px solid #2a8356;
+        }
+        &:hover{
+            background-color: #CDDDCD;
         }
     }
 }

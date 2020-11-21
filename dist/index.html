@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>首頁</title>
+        <title>Assignment</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.css" />
         <link rel="stylesheet" href="./assets/style/all.css" />
@@ -30,7 +30,7 @@
                         >
                     </li>
                     <li>
-                        <a class="sidebar-menu-item d-flex text-info" href="#"
+                        <a class="sidebar-menu-item d-flex text-info active" href="index.html"
                             ><span class="material-icons mr-3"> assignment </span> Assignment</a
                         >
                     </li>
@@ -64,20 +64,82 @@
             <div class="container-fluid">
 <!-- 上方選單 -->
 <div class="row">
-    <nav class="d-flex py-5 pl-5 w-100">
-        <a class="navbar-brand text-info mb-0 h1" href="#">Assignment</a>
-        <ul class="nav">
-            <li class="nav-link active" href="#">Active</li>
-            <li class="nav-link" href="#">Link</li>
-            <li class="nav-link" href="#">Link</li>
+    <nav class="main-nav d-flex p-5 w-100  align-items-center">
+        <h2 class="main-nav-title text-info mr-7">Assignment</h2>
+        <ul class="main-navbar d-flex w-100">
+            <li class="mr-auto fz-16 d-flex">
+                All Courses
+                <a href="#" class="main-navbar-item material-icons text-secondary ml-2"> keyboard_arrow_down </a>
+            </li>
+            <li class='mr-4'>
+                <a href="#" class="main-navbar-item material-icons text-info"> search </a>
+            </li>
+            <li>
+                <a href="#" class="main-navbar-item material-icons text-info"> notifications_active </a>
+            </li>
         </ul>
     </nav>
 </div>
+<!-- 小選單 -->
+<div class="d-flex justify-content-between align-items-center my-2">
+    <p class="text-info p-0 m-0 d-flex">All (4)<span class="material-icons"> keyboard_arrow_down </span></p>
+    <span class="text-dark p-0">2 comments</span>
+</div>
 <!-- 主要內容 -->
-<div class="row">
-    <div class="col-4 mt-5">
-        123
-        <button class="btn btn-primary">789</button>
+<div class="row px-5">
+    <div class="col-4 p-0">
+        <div class="mr-3">
+            <ul class="assignment-list">
+                <li>
+                    <a class="assignment-list-item active text-info" href="#">
+                        <div class="assignment-list-title d-flex justify-content-between mb-1">
+                            <span>Chapter Assignment 2</span>
+                            <span>4 hrs ago</span>
+                        </div>
+                        <div class="assignment-list-title d-flex justify-content-between">
+                            <h3 class="assignment-list-detail">Please check this file…</h3>
+                            <span class="text-dark">Emily Wang</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="assignment-list-item text-info" href="#">
+                        <div class="assignment-list-title d-flex justify-content-between mb-1">
+                            <span>Chapter Assignment 1</span>
+                            <span>12 hrs ago</span>
+                        </div>
+                        <div class="assignment-list-title d-flex justify-content-between">
+                            <h3 class="assignment-list-detail">My Homework</h3>
+                            <span class="text-dark">David Xu</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="assignment-list-item text-info" href="#">
+                        <div class="assignment-list-title d-flex justify-content-between mb-1">
+                            <span>Final Assignment</span>
+                            <span>18 hrs ago</span>
+                        </div>
+                        <div class="assignment-list-title d-flex justify-content-between">
+                            <h3 class="assignment-list-detail">Have a problem with this…</h3>
+                            <span class="text-dark">Tony Wei</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="assignment-list-item text-info" href="#">
+                        <div class="assignment-list-title d-flex justify-content-between mb-1">
+                            <span>Final Assignment</span>
+                            <span>19 hrs ago</span>
+                        </div>
+                        <div class="assignment-list-title d-flex justify-content-between">
+                            <h3 class="assignment-list-detail">Did I do it right?</h3>
+                            <span class="text-dark">Christina Lin</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
     <div class="col-8">456</div>
 </div>
