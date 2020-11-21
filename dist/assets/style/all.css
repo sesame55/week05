@@ -8787,7 +8787,8 @@ body {
 
 .sidebar {
   width: 296px;
-  height: 100vh; }
+  height: 100vh;
+  position: relative; }
 
 .sidebar-menu {
   list-style: none;
@@ -8803,7 +8804,33 @@ body {
     -o-transition: all 0.3s;
     transition: all 0.3s; }
     .sidebar-menu .sidebar-menu-item:hover {
-      border-left: 4px solid #2A8356; }
+      border-left: 4px solid #2a8356; }
+
+.sidebar-user {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.sidebar-img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; }
+
+.sidebar-detail .sidebar-title,
+.sidebar-detail .sidebar-text {
+  padding: 0;
+  margin: 0; }
+
+.sidebar-detail .sidebar-title {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold; }
+
+.sidebar-detail .sidebar-text {
+  font-size: 14px;
+  line-height: 1.5; }
 
 * {
   outline: 1px solid green; }
