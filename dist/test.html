@@ -2,12 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>test</title>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.css" />
-        <link rel="stylesheet" href="./assets/style/all.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>test</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.css" />
+<link rel="stylesheet" href="./assets/style/all.css" />
+
     </head>
 
     <body>
@@ -19,7 +20,7 @@
                 <!-- 選單 -->
                 <ul class="sidebar-menu">
                     <li>
-                        <a class="sidebar-menu-item d-flex text-info" href="test.html">
+                        <a class="sidebar-menu-item d-flex text-info" href="#">
                             <span class="material-icons mr-3"> assessment </span>
                             Dashboard</a
                         >
@@ -61,45 +62,86 @@
                 </div>
             </nav>
             <!-- 右側內容 -->
-            <div class="container-fluid"><p>object-fit: fill;</p>
-<img class='box box-fill mb-5' src="https://images.unsplash.com/photo-1571590913892-961dca997b38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80" alt="">
-
-<p>object-fit: contain;</p>
-<img class='box box-contain mb-5' src="https://images.unsplash.com/photo-1571590913892-961dca997b38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80" alt="">
-
-<p>object-fit: cover;</p>
-<img class='box box-cover mb-5' src="https://images.unsplash.com/photo-1571590913892-961dca997b38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80" alt="">
-
-<p>object-fit:  none;</p>
-<img class='box box-none mb-5' src="https://images.unsplash.com/photo-1571590913892-961dca997b38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80" alt="">
-
-<p> object-fit: scale-down;</p>
-<img class='box box-scale-down mb-5' src="https://images.unsplash.com/photo-1571590913892-961dca997b38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80" alt="">
-
-<style>
-.box{
-    width: 100px;
-    height: 100px;
-}
-.box-fill{
-    object-fit: fill;
-}
-.box-contain{
-    object-fit: contain;
-}
-.box-cover{
-    object-fit: cover;
-}
-.box- none{
-    object-fit:  none;
-}
-.box-scale-down{
-    object-fit: scale-down;
-}
-
-
-</style></div>
+            <div class="container-fluid main">
+<div class="row">
+    <div class="col-4">
+        <div class="list-group" id="list-tab" role="tablist">
+            <a
+                class="list-group-item list-group-item-action active"
+                id="list-home-list"
+                data-toggle="list"
+                href="#list-home"
+                role="tab"
+                aria-controls="home"
+                >Home</a
+            >
+            <a
+                class="list-group-item list-group-item-action"
+                id="list-profile-list"
+                data-toggle="list"
+                href="#list-profile"
+                role="tab"
+                aria-controls="profile"
+                >Profile</a
+            >
         </div>
+    </div>
+    <div class="col-8">
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                <div class="assignment-detail p-3 d-flex">
+                    <img class="assignment-detail-img mr-2" src="assets/images/andychen.jpeg" alt="" />
+                    <div class="assignment-detail-content">
+                        <div class="d-flex align-items-center mb-1">
+                            <h5 class="assignment-detail-name m-0 mr-auto">Andy Chen (You)</h5>
+                            <span class="material-icons mr-4"> star_border </span>
+                            <span class="material-icons"> edit </span>
+                        </div>
+                        <span class="assignment-detail-time mb-3 text-dark">13:24 AM (1 hours ago)</span>
+                        <p class="assignment-detail-text mb-3 mt-3">
+                            Hi David, by default, an image is rendered inline, like a letter so it sits on the same line
+                            that a, b, c and d sit on. There is space below that line for the descenders you find on
+                            letters like g, j, p and q.
+                            <br />
+                            <br />
+                            You can: 　
+                            <br />
+                            <br />
+                            • adjust the <span class="text-secondary bg-primary px-1 rounded">vertical-align</span> of
+                            the image to position it elsewhere (e.g. the middle ) or 　
+                            <br />
+                            • change the <span class="text-secondary bg-primary px-1 rounded">display</span> so it isn’t
+                            inline.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                <div class="assignment-detail p-3 d-flex flex-column">
+                    
+                    <div class="assignment-detail-content">
+                        <div class="d-flex align-items-center mb-1">
+
+                        </div>
+                        <span class="assignment-detail-time mb-3 text-dark">13:24 AM (1 hours ago)</span>
+                        <p class="assignment-detail-text mb-3 mt-3">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores ex quibusdam accusamus laboriosam ab tempore architecto consectetur iusto repellat eius perspiciatis, excepturi molestias ducimus incidunt obcaecati hic dolor non nesciunt?
+                        </p>
+
+                    </div>
+<div>
+                <button class="btn btn-outline-secondary mr-3">Mark as read</button>
+                <button class="btn btn-secondary">Reply</button>
+            </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+        </div>
+
         <script
             src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

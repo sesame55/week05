@@ -5,10 +5,10 @@
     // left: 0;
     width: 296px;
     // width: 23%;
-    height: 100vh;
-    position: relative;
+    min-height: 100vh;
+    // position: relative;
+    position: fixed;
 }
-
 
 .sidebar-menu {
     list-style: none;
@@ -24,14 +24,15 @@
         &.active {
             border-left: 4px solid #2a8356;
         }
-        &:hover{
-            background-color: #CDDDCD;
+        &:hover {
+            background-color: #cdddcd;
         }
     }
 }
 
 .sidebar-user {
-    position: absolute;
+    // position: fixed;
+    position:absolute;
     bottom: 0;
     left: 0;
     right: 0;

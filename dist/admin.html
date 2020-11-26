@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>admin</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.css" />
+<link rel="stylesheet" href="./assets/style/all.css" />
+
+    </head>
+
+    <body>
+        <div class="d-flex">
+            <!-- 側邊欄 -->
+            <nav class="sidebar bg-primary">
+                <!-- logo -->
+                <img class="sidebar-logo px-5 pt-5 pb-3 d-block w-100" src="assets/images/logo-ANSWER.svg" alt="" />
+                <!-- 選單 -->
+                <ul class="sidebar-menu">
+                    <li>
+                        <a class="sidebar-menu-item d-flex text-info" href="#">
+                            <span class="material-icons mr-3"> assessment </span>
+                            Dashboard</a
+                        >
+                    </li>
+                    <li>
+                        <a class="sidebar-menu-item d-flex text-info" href="#"
+                            ><span class="material-icons mr-3"> question_answer </span> Question</a
+                        >
+                    </li>
+                    <li>
+                        <a class="sidebar-menu-item d-flex text-info active" href="index.html"
+                            ><span class="material-icons mr-3"> assignment </span> Assignment</a
+                        >
+                    </li>
+                    <li>
+                        <a class="sidebar-menu-item d-flex text-info" href="#"
+                            ><span class="material-icons mr-3"> video_library </span> Course</a
+                        >
+                    </li>
+                    <li>
+                        <a class="sidebar-menu-item d-flex text-info" href="admin.html"
+                            ><span class="material-icons mr-3"> supervisor_account </span> Admin</a
+                        >
+                    </li>
+                    <li>
+                        <a class="sidebar-menu-item d-flex text-info" href="#">
+                            <span class="material-icons mr-3"> settings </span>Settings</a
+                        >
+                    </li>
+                </ul>
+                <!-- 登入者 -->
+                <div class="sidebar-user d-flex align-items-center pb-5 px-5">
+                    <img class="sidebar-img mr-3" src="assets/images/andychen.jpeg" alt="" />
+
+                    <div class="sidebar-detail">
+                        <p class="sidebar-title text-info mb-1">Andy Chen</p>
+                        <p class="sidebar-text text-dark">andy0401@mail.com</p>
+                    </div>
+                </div>
+            </nav>
+            <!-- 右側內容 -->
+            <div class="container-fluid main">
+<!-- 上方選單 -->
+<div class="row">
+    <nav class="main-nav d-flex p-5 w-100 align-items-center">
+        <h2 class="main-nav-title text-info mr-7">Admin</h2>
+        <ul class="main-navbar d-flex w-100">
+            <li class="mr-auto fz-16 d-flex">
+                <a href="#" data-toggle="modal" data-target="#add" class="main-navbar-item material-icons text-secondary mr-2"> add </a>
+                Add New Admin
+            </li>
+            <li class="mr-4">
+                <a href="#" class="main-navbar-item material-icons text-info"> search </a>
+            </li>
+            <li>
+                <a href="#" class="main-navbar-item material-icons text-info"> notifications_active </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<!-- 表格 -->
+<div class="table-responsive mt-3">
+    <table class="table table-borderless">
+        <thead class="thead">
+            <tr>
+                <th scope="col " class="pb-1">
+                    <div class="d-flex">
+                        ID
+                        <a href="#" class="material-icons text-secondary ml-2 table-logo"> arrow_downward </a>
+                    </div>
+                </th>
+                <th scope="col" class="pb-1">Name</th>
+                <th scope="col" class="pb-1">Email</th>
+                <th scope="col" class="pb-1">Verified</th>
+                <th scope="col" class="pb-1"></th>
+                <th scope="col" class="pb-1"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table_inner">
+                <th scope="row">#1</th>
+                <td>Emir Wicks</td>
+                <td class="table_mail">emir.wicks@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <a href="#" data-toggle="modal" data-target="#show" class="material-icons"> remove_red_eye </a>
+                </td>
+                <td>
+                    <a href="#" data-toggle="modal" data-target="#edit" class="material-icons"> edit </a>
+                </td>
+            </tr>
+            <tr class="table_inner">
+                <th scope="row">#2</th>
+                <td>Zaina Goldsmith</td>
+                <td class="table_mail">zaina.goldsmith@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <a href="#" data-toggle="modal" data-target="#show" class="material-icons"> remove_red_eye </a>
+                </td>
+                <td>
+                    <a href="#" data-toggle="modal" data-target="#edit" class="material-icons"> edit </a>
+                </td>
+            </tr>
+            <tr class="table_inner">
+                <th scope="row">#3</th>
+                <td>Mahima Lopez</td>
+                <td class="table_mail">Mahima.Lopez@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <a href="#" data-toggle="modal" data-target="#show" class="material-icons"> remove_red_eye </a>
+                </td>
+                <td>
+                    <a href="#" data-toggle="modal" data-target="#edit" class="material-icons"> edit </a>
+                </td>
+            </tr>
+            <tr class="table_inner">
+                <th scope="row">#4</th>
+                <td>Pharrell Murray</td>
+                <td class="table_mail">Pharrell.Murray@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <a href="#" data-toggle="modal" data-target="#show" class="material-icons"> remove_red_eye </a>
+                </td>
+                <td>
+                    <a href="#" data-toggle="modal" data-target="#edit" class="material-icons"> edit </a>
+                </td>
+            </tr>
+            <tr class="table_inner">
+                <th scope="row">#5</th>
+                <td>Annika Mcbride</td>
+                <td class="table_mail">Annika.Mcbride@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <a href="#" data-toggle="modal" data-target="#show" class="material-icons"> remove_red_eye </a>
+                </td>
+                <td>
+                    <a href="#" data-toggle="modal" data-target="#edit" class="material-icons"> edit </a>
+                </td>
+            </tr>
+            <tr class="table_inner">
+                <th scope="row">#6</th>
+                <td>Fatimah Clark</td>
+                <td class="table_mail">Fatimah.Clark@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <a href="#" data-toggle="modal" data-target="#show" class="material-icons"> remove_red_eye </a>
+                </td>
+                <td>
+                    <a href="#" data-toggle="modal" data-target="#edit" class="material-icons"> edit </a>
+                </td>
+            </tr>
+            <tr class="table_inner">
+                <th scope="row">#7</th>
+                <td>Klaudia Rhodes</td>
+                <td class="table_mail">Klaudia.Rhodes@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <a href="#" data-toggle="modal" data-target="#show" class="material-icons"> remove_red_eye </a>
+                </td>
+                <td>
+                    <a href="#" data-toggle="modal" data-target="#edit" class="material-icons"> edit </a>
+                </td>
+            </tr>
+            <tr class="table_inner">
+                <th scope="row">#8</th>
+                <td>Tillie Lucero</td>
+                <td class="table_mail">Tillie.Lucero@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <a href="#" data-toggle="modal" data-target="#show" class="material-icons"> remove_red_eye </a>
+                </td>
+                <td>
+                    <a href="#" data-toggle="modal" data-target="#edit" class="material-icons"> edit </a>
+                </td>
+            </tr>
+            <tr class="table_inner">
+                <th scope="row">#9</th>
+                <td>Sabrina Stephenson</td>
+                <td class="table_mail">Sabrina.Stephenson@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <a href="#" data-toggle="modal" data-target="#show" class="material-icons"> remove_red_eye </a>
+                </td>
+                <td>
+                    <a href="#" data-toggle="modal" data-target="#edit" class="material-icons"> edit </a>
+                </td>
+            </tr>
+            <tr class="table_inner">
+                <th scope="row">#10</th>
+                <td>Annie Smith</td>
+                <td class="table_mail">Annie.Smith@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <a href="#" data-toggle="modal" data-target="#show" class="material-icons"> remove_red_eye </a>
+                </td>
+                <td>
+                    <a href="#" data-toggle="modal" data-target="#edit" class="material-icons"> edit </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- add modal -->
+<div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New Admin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-secondary">Update</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- show modal -->
+<div class="modal fade" id="show" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-5">
+                <div class="d-flex">
+                    <img src="assets/images/emir.jpeg" class="modal-img" alt="" />
+                    <ul class="modal-text w-100 pl-5 d-flex flex-column mb-0">
+                        <li class="d-flex align-items-center justify-content-between">
+                            <span class="fz-16"> #1</span>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </li>
+                        <li class="fz-16">Admin</li>
+                        <li class="h5 modal-title ">Emir Wicks</li>
+                        <li class='fz-14 text-dark'>emir.wicks@mail.com</li>
+                        <li class="d-flex align-items-center justify-content-between">
+                            <button class="btn btn-primary px-2 py-1">verified</button>
+                            <span class="material-icons"> expand_more </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- edit modal -->
+<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Admin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-secondary">Update</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+        </div>
+
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

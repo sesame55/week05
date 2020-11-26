@@ -3,10 +3,15 @@
 @import "../../../node_modules/bootstrap/scss/mixins";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-@import 'base/base';//字型
 
+//各種基本設定
+@import 'base/base';
+
+// components
 @import 'components/sidebar';//側邊攔
 @import 'components/main';//上方選單
+@import 'components/table';//表格
+@import 'components/modal';//modal
 
 // 頁面
 @import 'page/assignment';

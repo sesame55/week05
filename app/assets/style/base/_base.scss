@@ -6,13 +6,29 @@ body {
 
 $fz: 10px;
 
+.fz-12 {
+    font-size: $fz * 1.2;
+    line-height: 1.5;
+}
+.fz-14 {
+    font-size: $fz * 1.4;
+    line-height: 1.5;
+}
+
 .fz-16 {
     font-size: $fz * 1.6;
     line-height: 1.5;
 }
 
-a{
+a {
     &:hover {
         text-decoration: none;
+    }
+}
+
+.material-icons {
+    color: #121212;
+    &:hover {
+        color: #2a8356;
     }
 }

@@ -8785,6 +8785,14 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: 'Lato', sans-serif; }
 
+.fz-12 {
+  font-size: 12px;
+  line-height: 1.5; }
+
+.fz-14 {
+  font-size: 14px;
+  line-height: 1.5; }
+
 .fz-16 {
   font-size: 16px;
   line-height: 1.5; }
@@ -8792,10 +8800,15 @@ body {
 a:hover {
   text-decoration: none; }
 
+.material-icons {
+  color: #121212; }
+  .material-icons:hover {
+    color: #2a8356; }
+
 .sidebar {
   width: 296px;
-  height: 100vh;
-  position: relative; }
+  min-height: 100vh;
+  position: fixed; }
 
 .sidebar-menu {
   list-style: none;
@@ -8813,7 +8826,7 @@ a:hover {
     .sidebar-menu .sidebar-menu-item.active {
       border-left: 4px solid #2a8356; }
     .sidebar-menu .sidebar-menu-item:hover {
-      background-color: #CDDDCD; }
+      background-color: #cdddcd; }
 
 .sidebar-user {
   position: absolute;
@@ -8841,6 +8854,9 @@ a:hover {
   font-size: 14px;
   line-height: 1.5; }
 
+.main {
+  margin-left: 296px; }
+
 .main-nav-title {
   font-size: 24px;
   line-height: 1.5;
@@ -8854,6 +8870,42 @@ a:hover {
   .main-navbar-item {
     display: block;
     text-decoration: none; }
+
+.table {
+  border-bottom: 1px solid #cdddcd; }
+  .table .thead th {
+    border-bottom: 1px solid #000; }
+
+.table_inner {
+  padding: 16px 0; }
+  .table_inner td,
+  .table_inner th {
+    border-top: 1px solid #cdddcd; }
+  .table_inner:hover {
+    background-color: #edf4ee; }
+  .table_inner td:nth-child(n + 5) {
+    padding: 0.75rem 0; }
+
+.table_mail {
+  text-transform: lowercase; }
+
+.table-logo {
+  width: 12px;
+  height: 12px; }
+
+.modal-img {
+  width: 141px;
+  height: 141px;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.modal-text {
+  list-style: none; }
+
+.modal-title {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: bold; }
 
 .assignment-list {
   list-style: none;

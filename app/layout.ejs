@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title><%- title %></title>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.css" />
-        <link rel="stylesheet" href="./assets/style/all.css" />
+        <%- include('head.ejs') %>
     </head>
 
     <body>
@@ -40,7 +34,7 @@
                         >
                     </li>
                     <li>
-                        <a class="sidebar-menu-item d-flex text-info" href="#"
+                        <a class="sidebar-menu-item d-flex text-info" href="admin.html"
                             ><span class="material-icons mr-3"> supervisor_account </span> Admin</a
                         >
                     </li>
@@ -61,8 +55,9 @@
                 </div>
             </nav>
             <!-- 右側內容 -->
-            <div class="container-fluid"><%- contents %></div>
+            <div class="container-fluid main"><%- contents %></div>
         </div>
+
         <script
             src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
