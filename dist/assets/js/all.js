@@ -1,11 +1,16 @@
 "use strict";
 
-// 側邊欄
-// 改按鈕方向
 $(document).ready(function () {
+  // 改按鈕方向
   $('.modal-btn').click(function (e) {
     e.preventDefault();
     $(this).toggleClass('active');
+  }); // 側邊欄
+
+  $('.sidebar-menu-item').click(function (e) {
+    // e.preventDefault();
+    $(this).addClass('active');
+    $(this).parent().siblings().children().removeClass('active');
   });
 }); // 多選
 
