@@ -1,14 +1,21 @@
-.modal-img{
+.modal-img {
     width: 141px;
     height: 141px;
     object-fit: cover;
 }
-.modal-text{
+.modal-text {
     list-style: none;
-
 }
-.modal-title{
-    font-size: $fz *2.4;
+.modal-title {
+    font-size: $fz * 2.4;
     line-height: 1.5;
     font-weight: bold;
+    &-sm {
+        font-size: $fz * 2;
+        line-height: 1.5;
+        font-weight: bold;
+    }
+}
+.modal-input{
+height: 51px;
 }
