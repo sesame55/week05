@@ -324,12 +324,33 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </li>
-                        <li class="fz-16">Admin</li>
+                        <li class="fz-16 mt-2">Admin</li>
                         <li class="h5 modal-title">Emir Wicks</li>
-                        <li class="fz-14 text-dark">emir.wicks@mail.com</li>
-                        <li class="d-flex align-items-center justify-content-between">
+                        <li class="fz-14 text-dark mt-2">emir.wicks@mail.com</li>
+                        <li class="d-flex align-items-center justify-content-between mt-3">
                             <button class="btn btn-primary px-2 py-1">verified</button>
-                            <span class="material-icons"> expand_more </span>
+                            <span
+                                class="material-icons modal-btn"
+                                data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne"
+                            >
+                                expand_more
+                            </span>
+                        </li>
+                        <li class="collapse mt-5" id="collapseOne">
+                            <div class="d-flex">
+                                <button class="btn btn-outline-danger px-5 mr-3">deactivate</button>
+                                <button
+                                    class="btn btn-secondary px-5"
+                                    data-toggle="modal"
+                                    data-target="#edit"
+                                    data-dismiss="modal"
+                                >
+                                    edit
+                                </button>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -364,7 +385,7 @@
                         <label for="editEmail" class="mb-1">Email</label>
                         <input
                             type="email"
-                            class="form-control bg-primary  modal-input"
+                            class="form-control bg-primary modal-input"
                             id="editEmail"
                             placeholder="emir.wicks@mail.com"
                         />
@@ -375,7 +396,7 @@
                 <div class="d-flex align-items-center my-3">
                     <span class="material-icons text-secondary mr-2"> check_circle </span>
                     <span class="fz-16 fw-bold mr-auto">Verified</span>
-                    <span class='fz-14'>2020/4/12</span>
+                    <span class="fz-14">2020/4/12</span>
                 </div>
                 <button class="btn btn-outline-success w-100 p-3 text-secondary fz-16 fw-bold">
                     Send Verification Mail
@@ -411,13 +432,11 @@
                 </div>
                 <hr class="my-5" />
                 <h5 class="modal-title-sm mb-3">Deactivate Account</h5>
-<div class="d-flex align-items-center my-3">
+                <div class="d-flex align-items-center my-3">
                     <span class="material-icons text-danger mr-2"> report_problem </span>
                     <span class="fz-16 text-danger">This cannot be undone!</span>
                 </div>
-                <button class="btn btn-outline-danger w-100 p-3 fz-16 fw-bold">
-                    Send Verification Mail
-                </button>
+                <button class="btn btn-outline-danger w-100 p-3 fz-16 fw-bold">Send Verification Mail</button>
             </div>
             <div class="modal-footer border-top-0 mt-5">
                 <button type="button" class="btn btn-outline-secondary px-5" data-dismiss="modal">Cancel</button>

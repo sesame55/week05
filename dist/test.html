@@ -41,7 +41,7 @@
                         >
                     </li>
                     <li>
-                        <a class="sidebar-menu-item d-flex text-info" href="#"
+                        <a class="sidebar-menu-item d-flex text-info" href="admin.html"
                             ><span class="material-icons mr-3"> supervisor_account </span> Admin</a
                         >
                     </li>
@@ -63,83 +63,108 @@
             </nav>
             <!-- 右側內容 -->
             <div class="container-fluid main">
+<div class="accordion" id="accordionExample">
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+                <button
+                    class="btn btn-link"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                >
+                    Collapsible Group Item #1
+                </button>
+            </h2>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+                <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                >
+                    Collapsible Group Item #2
+                </button>
+            </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+                <button
+                    class="btn btn-link collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                >
+                    Collapsible Group Item #3
+                </button>
+            </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+</div>
+<p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+</p>
 <div class="row">
-    <div class="col-4">
-        <div class="list-group" id="list-tab" role="tablist">
-            <a
-                class="list-group-item list-group-item-action active"
-                id="list-home-list"
-                data-toggle="list"
-                href="#list-home"
-                role="tab"
-                aria-controls="home"
-                >Home</a
-            >
-            <a
-                class="list-group-item list-group-item-action"
-                id="list-profile-list"
-                data-toggle="list"
-                href="#list-profile"
-                role="tab"
-                aria-controls="profile"
-                >Profile</a
-            >
-        </div>
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
     </div>
-    <div class="col-8">
-        <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                <div class="assignment-detail p-3 d-flex">
-                    <img class="assignment-detail-img mr-2" src="assets/images/andychen.jpeg" alt="" />
-                    <div class="assignment-detail-content">
-                        <div class="d-flex align-items-center mb-1">
-                            <h5 class="assignment-detail-name m-0 mr-auto">Andy Chen (You)</h5>
-                            <span class="material-icons mr-4"> star_border </span>
-                            <span class="material-icons"> edit </span>
-                        </div>
-                        <span class="assignment-detail-time mb-3 text-dark">13:24 AM (1 hours ago)</span>
-                        <p class="assignment-detail-text mb-3 mt-3">
-                            Hi David, by default, an image is rendered inline, like a letter so it sits on the same line
-                            that a, b, c and d sit on. There is space below that line for the descenders you find on
-                            letters like g, j, p and q.
-                            <br />
-                            <br />
-                            You can: 　
-                            <br />
-                            <br />
-                            • adjust the <span class="text-secondary bg-primary px-1 rounded">vertical-align</span> of
-                            the image to position it elsewhere (e.g. the middle ) or 　
-                            <br />
-                            • change the <span class="text-secondary bg-primary px-1 rounded">display</span> so it isn’t
-                            inline.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-                <div class="assignment-detail p-3 d-flex flex-column">
-                    
-                    <div class="assignment-detail-content">
-                        <div class="d-flex align-items-center mb-1">
-
-                        </div>
-                        <span class="assignment-detail-time mb-3 text-dark">13:24 AM (1 hours ago)</span>
-                        <p class="assignment-detail-text mb-3 mt-3">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores ex quibusdam accusamus laboriosam ab tempore architecto consectetur iusto repellat eius perspiciatis, excepturi molestias ducimus incidunt obcaecati hic dolor non nesciunt?
-                        </p>
-
-                    </div>
-<div>
-                <button class="btn btn-outline-secondary mr-3">Mark as read</button>
-                <button class="btn btn-secondary">Reply</button>
-            </div>
-
-                </div>
-            </div>
-        </div>
+  </div>
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
     </div>
-</div>
-</div>
+  </div>
+</div></div>
         </div>
 
         <script
@@ -152,5 +177,6 @@
             integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
             crossorigin="anonymous"
         ></script>
+        <script src="./assets/js/all.js"></script>
     </body>
 </html>

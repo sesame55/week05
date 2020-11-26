@@ -8917,6 +8917,14 @@ a:hover {
 .modal-input {
   height: 51px; }
 
+.modal-btn.active {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s; }
+
 .assignment-list {
   list-style: none;
   padding: 0;

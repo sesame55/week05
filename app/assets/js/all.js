@@ -1,3 +1,15 @@
+// 側邊欄
+
+// 改按鈕方向
+$(document).ready(function () {
+  $('.modal-btn').click(function (e) {
+      e.preventDefault();
+      $(this).toggleClass('active');
+  });
+});
+
+
+// 多選
 let modalIcon = document.querySelectorAll('.modal-check-icon');
 modalIcon = Array.from(modalIcon);
 
