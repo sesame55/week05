@@ -8803,6 +8803,9 @@ body {
 a:hover {
   text-decoration: none; }
 
+textarea {
+  resize: none; }
+
 .material-icons {
   color: #121212; }
   .material-icons:hover {
@@ -8841,7 +8844,9 @@ a:hover {
   display: block;
   width: 40px;
   height: 40px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .sidebar-detail .sidebar-title,
 .sidebar-detail .sidebar-text {
@@ -8976,5 +8981,15 @@ a:hover {
 .assignment-detail-text {
   font-size: 14px;
   line-height: 1.5; }
+
+.editText {
+  display: none; }
+
+.editText.active {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0; }
 
 /*# sourceMappingURL=all.css.map */

@@ -1,19 +1,23 @@
-
-
-
-
-
 $(document).ready(function () {
-  // 改按鈕方向
+    // 改按鈕方向
     $('.modal-btn').click(function (e) {
         e.preventDefault();
         $(this).toggleClass('active');
     });
     // 側邊欄
-    $('.sidebar-menu-item').click(function (e) { 
-      // e.preventDefault();
-      $(this).addClass('active');
-      $(this).parent().siblings().children().removeClass('active');
+    $('.sidebar-menu-item').click(function (e) {
+        // e.preventDefault();
+        $(this).toggleClass('active');
+        $(this).parent().siblings().children().removeClass('active');
+    });
+    // collapse
+    $('#editTextBtn').click(function (e) {
+        // e.preventDefault();
+        $('#editText').addClass('active');
+    });
+    $('#cancelBtn').click(function (e) {
+        // e.preventDefault();
+        $('#editText').removeClass('active');
     });
 });
 

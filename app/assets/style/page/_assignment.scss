@@ -59,3 +59,22 @@
         line-height: 1.5;
     }
 }
+
+//
+// .assignment-textarea {
+//     max-height: 320px;
+// }
+.editText{
+    display: none;
+}
+.editText.active {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.editText-list{
+
+}

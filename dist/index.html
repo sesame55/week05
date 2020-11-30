@@ -95,7 +95,7 @@
                     <a class="assignment-list-item active text-info" href="#">
                         <div class="assignment-list-title d-flex justify-content-between align-items-center mb-1">
                             <span>Chapter Assignment 2</span>
-                            <span class='fz-12'>4 hrs ago</span>
+                            <span class="fz-12">4 hrs ago</span>
                         </div>
                         <div class="assignment-list-title d-flex justify-content-between align-items-center">
                             <h3 class="assignment-list-detail">Please check this file…</h3>
@@ -107,7 +107,7 @@
                     <a class="assignment-list-item text-info" href="#">
                         <div class="assignment-list-title d-flex justify-content-between align-items-center mb-1">
                             <span>Chapter Assignment 1</span>
-                            <span class='fz-12'>12 hrs ago</span>
+                            <span class="fz-12">12 hrs ago</span>
                         </div>
                         <div class="assignment-list-title d-flex justify-content-between align-items-center">
                             <h3 class="assignment-list-detail">My Homework</h3>
@@ -119,7 +119,7 @@
                     <a class="assignment-list-item text-info" href="#">
                         <div class="assignment-list-title d-flex justify-content-between mb-1 align-items-center">
                             <span>Final Assignment</span>
-                            <span class='fz-12'>18 hrs ago</span>
+                            <span class="fz-12">18 hrs ago</span>
                         </div>
                         <div class="assignment-list-title d-flex justify-content-between align-items-center">
                             <h3 class="assignment-list-detail">Have a problem with this…</h3>
@@ -131,7 +131,7 @@
                     <a class="assignment-list-item text-info" href="#">
                         <div class="assignment-list-title d-flex justify-content-between mb-1 align-items-center">
                             <span>Final Assignment</span>
-                            <span class='fz-12'>19 hrs ago</span>
+                            <span class="fz-12">19 hrs ago</span>
                         </div>
                         <div class="assignment-list-title d-flex justify-content-between align-items-center">
                             <h3 class="assignment-list-detail">Did I do it right?</h3>
@@ -162,9 +162,10 @@
                     <p class="assignment-detail-text mb-3 mt-3">
                         Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the
                         following code the height of the
-                        <span class="text-secondary bg-primary rounded px-1"> div</span> is bigger than the height of the
-                        <span class="text-secondary bg-primary px-1 rounded">img</span> ? There is a gap below the image, but it
-                        doesn’t seems to be a padding/margin. <br />What is the gap or extra space below image?
+                        <span class="text-secondary bg-primary rounded px-1"> div</span> is bigger than the height of
+                        the <span class="text-secondary bg-primary px-1 rounded">img</span> ? There is a gap below the
+                        image, but it doesn’t seems to be a padding/margin. <br />What is the gap or extra space below
+                        image?
                     </p>
                     <button class="btn btn-primary border border-success d-flex px-3 py-2 mb-3">
                         <span class="material-icons mr-2"> attach_file </span>HW-2-David.zip
@@ -189,9 +190,11 @@
                         You can: 　
                         <br />
                         <br />
-                        • adjust the <span class="text-secondary bg-primary px-1 rounded">vertical-align</span> of the image to position it elsewhere (e.g. the middle ) or 　
+                        • adjust the <span class="text-secondary bg-primary px-1 rounded">vertical-align</span> of the
+                        image to position it elsewhere (e.g. the middle ) or 　
                         <br />
-                        • change the <span class="text-secondary bg-primary px-1 rounded">display</span> so it isn’t inline.
+                        • change the <span class="text-secondary bg-primary px-1 rounded">display</span> so it isn’t
+                        inline.
                     </p>
                 </div>
             </div>
@@ -204,19 +207,54 @@
             </div>
             <div>
                 <button class="btn btn-outline-secondary mr-3">Mark as read</button>
-                <button class="btn btn-secondary">Reply</button>
+                <button id="editTextBtn" class="btn btn-secondary editTextBtn">Reply</button>
+            </div>
+        </div>
+        <div class="editText" id="editText">
+            <div class="assignment-content p-3  bg-primary border border-success">
+                <ul class="d-flex list-unstyled align-items-center mb-0">
+                    <li class=" mr-2">Body Text</li>
+                    <li class="d-flex align-items-center mr-4">
+                        <a href="#" class="material-icons"> arrow_drop_down </a>
+                    </li>
+                    <li class="d-flex align-items-center mr-4">
+                        <a href="#" class="material-icons"> format_bold </a>
+                    </li>
+                    <li class="d-flex align-items-center mr-4">
+                        <a href="#" class="material-icons"> format_italic </a>
+                    </li>
+                    <li class="d-flex align-items-center mr-4">
+                        <a href="#" class="material-icons"> format_list_bulleted </a>
+                    </li>
+                    <li class="d-flex align-items-center mr-4">
+                        <a href="#" class="material-icons"> format_list_numbered </a>
+                    </li>
+                    <li class="d-flex align-items-center mr-4">
+                        <a href="#" class="material-icons"> insert_photo </a>
+                    </li>
+                    <li class='d-flex align-items-center'>
+                        <a href="#" class="material-icons"> code </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="assignment-textarea w-100 bg-white border border-success">
+                <textarea
+                    name=""
+                    id=""
+                    rows="10"                    class="px-5 py-3 mb-0 w-100 h-100 border-0"
+                    placeholder="Reply an answer…"
+                ></textarea>
+                <div class="w-100 d-flex align-items-end ml-auto mb-3 pr-4">
+                    <button id="cancelBtn" class="btn btn-outline-secondary mr-2  ml-auto ">Cancel</button>
+                    <button class="btn btn-secondary editTextBtn">Reply</button>
+                </div>
             </div>
         </div>
     </div>
 </div>
 </div>
         </div>
-
-        <script
-            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"
-        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"

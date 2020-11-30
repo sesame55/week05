@@ -20,7 +20,7 @@ $fz: 10px;
     line-height: 1.5;
 }
 
-.fw-bold{
+.fw-bold {
     font-weight: bold;
 }
 
@@ -28,6 +28,10 @@ a {
     &:hover {
         text-decoration: none;
     }
+}
+
+textarea {
+    resize: none;
 }
 
 .material-icons {
